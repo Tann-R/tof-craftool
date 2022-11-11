@@ -1,3 +1,5 @@
+# tof-craftool
+This simple tool aims to assist Troupe of Fate crafters in calculating the average price of the current top end crafted gear based on their server, in order to determine the best price-per-piece to use when selling to the Free Company.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
