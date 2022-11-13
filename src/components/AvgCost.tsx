@@ -5,10 +5,10 @@ import {GetCosts} from '../remote/universalis-api';
 let totalValue=0;
 let totalItems=0;
 
-export function AvgCost() {
+export async function AvgCost() {
     let itemList;
     let cost;
-    GetCosts().then((response) => console.log(response));
+    await GetCosts().then((response) => console.log(response));
     GetCosts().then((response) => {
         itemList=(response);
         // It's fighting me here on mapping because ... i don't know.  it just is.
