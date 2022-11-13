@@ -2,19 +2,23 @@ import React from 'react';
 import './App.css';
 import {AvgCost} from './components/AvgCost';
 
-function App() {
-  let cost=AvgCost()
+function getCost() : Promise<number> {
+  return new Promise((resolve, reject) => {
+    let cost : number =   Number(AvgCost);
+    resolve(cost);
+  });
+}
+
+async function App() {
+  let cost=await getCost();
+  let discountedCost=cost*.8;
   return (
-    <div className="App">
-      <header>
-        <h1>
-          Testing Header.
-        </h1>
-      </header>
-      <main>
-        The average price for high quality Rinascita gear on Cactuar right now is some amount of gil that this doesn't want to let me display from a variable for some mysterious reason per item.
-      </main>
-    </div>
+    <main>
+      <div>
+        The average price per item on Rinascita gear on Cactuar is currently {cost} gil.<br/>
+        With your Troupe of Fate member discount, your cost per item comes to {discountedCost} gil.
+      </div>
+    </main>
   )
 }
 
