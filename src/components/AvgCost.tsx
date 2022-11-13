@@ -8,7 +8,7 @@ let totalItems=0;
 export async function AvgCost() {
     let itemList;
     let cost;
-    await GetCosts().then((response) => console.log(response));
+    let returnValue = await GetCosts();
     GetCosts().then((response) => {
         itemList=(response);
         // It's fighting me here on mapping because ... i don't know.  it just is.
