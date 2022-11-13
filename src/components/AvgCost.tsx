@@ -1,21 +1,21 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import { IItem } from '../app/interfaces';
 import {GetCosts} from '../remote/universalis-api';
 
-let totalValue=0;
-let totalItems=0;
-
 export async function AvgCost() {
-    let cost;
-    let itemList = await GetCosts();
-    itemList.map((itemList: any) => {
-        itemList.forEach((gear:IItem) => {
+    let [price, setPrice]=useState(0);
+    let totalCost=0;
+    let totalItems=0;
+    let CalcCost=await GetCosts().then((result)=>
+        (
+            result.forEach((gear:IItem) => {
             if (gear.listings.length>0) {
-                totalValue+=gear.listings[0].pricePerUnit;
+                totalCost+=gear.listings[0].pricePerUnit;
                 totalItems+=1;
             }
-        })
-    })
-    cost=totalValue/totalItems;
-    return cost;
+        }))).then(()=>(
+        setPrice(totalCost/totalItems)
+    ))
+    await CalcCost;
+    return price;
 }
