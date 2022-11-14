@@ -6,7 +6,7 @@ let prices=[0,0];
 
 async function GetPricing() {
   let [costs,setCosts]=useState([0,0]);
-  await AvgCost().then((result) => setCosts([result, (result*0.8)]));
+  await AvgCost().then((result) => setCosts([Math.ceil(result), Math.ceil(result*0.75)]));
   prices=costs;
 }
 
@@ -14,6 +14,9 @@ const App = () => {
   GetPricing();
   return (
     <main>
+      <h1>
+        Troupe of Fate Craftool
+      </h1>
       <div>
         The average price per item on Rinascita gear on Cactuar is currently {prices[0]} gil.<br/>
         With your Troupe of Fate member discount, your cost per item comes to {prices[1]} gil.
