@@ -1,6 +1,4 @@
-import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import { IItem } from '../app/interfaces';
 
 export const GetCosts = async () => {
     const response=await axios({

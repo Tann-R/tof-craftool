@@ -37,3 +37,72 @@
     transform: translateY(0px);
   }
 }
+main {
+  background:#222228;
+  font-family:tahoma;
+  font-size:1em;
+  color:#aaaaae;
+  text-align:justify;
+}
+.img1 {
+  background-image:url(https://cdn.discordapp.com/attachments/247591821683720192/1041810510007517224/image.png);
+  height:200px;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover
+}
+.img2 {
+  background-image:url(https://cdn.discordapp.com/attachments/247591821683720192/1041810888530853968/image.png);
+  height:200px;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.content {
+  max-width:60%;
+  margin:auto;
+  background:rgba(0,0,0,.3);
+  padding:25px;
+  border-radius:25px;
+  margin-top:20px;
+  margin-bottom:20px;
+  border-bottom:double 9px #aaaaae;
+  border-right:double 9px #aaaaae;
+}
+.content h1 {
+  background:linear-gradient(90deg, rgb(150, 150, 176,1) 0%, rgba(250, 250, 275, 1) 50%, rgba(150, 150, 175, 1) 100%);
+  color:transparent;
+  background-clip:text; 
+  -webkit-background-clip:text;
+  text-shadow:rgba(0,0,0,.5) 2px 2px 2px;
+}
+.content h2 {
+  font-style:italic;
+  color:#ccccce;
+  text-shadow:#000 2px 2px 2px;
+  padding-left:50px;
+}
+.ToFbutton {
+  border-radius:25px ;
+  height:50px ;display:block;
+  background:#101018 ;
+  color:#9696af ;
+  border-right:#000 solid 3px ;
+  border-bottom:#000 solid 3px ;
+  border-left:#29295d solid 3px ;
+  border-top:#29295d solid 3px ;
+  font-size:1em ;
+  font-weight:bold ;
+  text-transform:uppercase ;
+  box-shadow:#000 2px 2px 5px ;
+  font-family: tahoma;
+  padding:10px;
+  margin:auto;
+  transition:2s;
+}
+.ToFbutton:hover {
+  letter-spacing: 2px;
+  transition: 2s;
+}
