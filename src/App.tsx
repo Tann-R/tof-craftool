@@ -21,7 +21,7 @@ const App = () => {
         <p>This is a savings of {(costs[0]*10)-(costs[1]*10)} gil on your gear set.</p>
         <p>Support your Troupe of Fate crafting friends today!</p>
       </div>
-      <div className="img3"/>
+      <div className="img2"/>
     </main>
   )
 }

@@ -45,7 +45,7 @@ main {
   text-align:justify;
 }
 .img1 {
-  background-image:url(https://images.pexels.com/photos/813872/pexels-photo-813872.jpeg);
+  background-image:url(https://cdn.discordapp.com/attachments/247591821683720192/1041810510007517224/image.png);
   height:200px;
   background-attachment:fixed;
   background-position:center;
@@ -53,15 +53,7 @@ main {
   background-size:cover
 }
 .img2 {
-  background-image:url(https://images.pexels.com/photos/326097/pexels-photo-326097.jpeg);
-  height:200px;
-  background-attachment:fixed;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-.img3 {
-  background-image:url(https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg);
+  background-image:url(https://cdn.discordapp.com/attachments/247591821683720192/1041810888530853968/image.png);
   height:200px;
   background-attachment:fixed;
   background-position:center;
