@@ -1,47 +1,8 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 main {
-  background:#222228;
+  background:var(--background);
   font-family:tahoma;
   font-size:1em;
-  color:#aaaaae;
+  color:var(--acc1);
   text-align:justify;
 }
 .img1 {
@@ -68,11 +29,11 @@ main {
   border-radius:25px;
   margin-top:20px;
   margin-bottom:20px;
-  border-bottom:double 9px #aaaaae;
-  border-right:double 9px #aaaaae;
+  border-bottom:double 9px var(--acc1);
+  border-right:double 9px var(--acc1);
 }
 .content h1 {
-  background:linear-gradient(90deg, rgb(150, 150, 176,1) 0%, rgba(250, 250, 275, 1) 50%, rgba(150, 150, 175, 1) 100%);
+  background:linear-gradient(90deg, var(--grad));
   color:transparent;
   background-clip:text; 
   -webkit-background-clip:text;
@@ -80,19 +41,19 @@ main {
 }
 .content h2 {
   font-style:italic;
-  color:#ccccce;
+  color:var(--acc2);
   text-shadow:#000 2px 2px 2px;
   padding-left:50px;
 }
 .ToFbutton {
   border-radius:25px ;
   height:50px ;display:block;
-  background:#101018 ;
-  color:#9696af ;
-  border-right:#000 solid 3px ;
-  border-bottom:#000 solid 3px ;
-  border-left:#29295d solid 3px ;
-  border-top:#29295d solid 3px ;
+  background:var(--buttonBg) ;
+  color:var(--acc2) ;
+  border-right:var(--buttonAcc1) solid 3px ;
+  border-bottom:var(--buttonAcc1) solid 3px ;
+  border-left:var(--buttonAcc2) solid 3px ;
+  border-top:var(--buttonAcc2) solid 3px ;
   font-size:1em ;
   font-weight:bold ;
   text-transform:uppercase ;

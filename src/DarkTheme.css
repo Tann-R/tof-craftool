@@ -1,0 +1,9 @@
+:root {
+    --background: #222228;
+    --acc1: #aaaaae;
+    --acc2: #ccccce;
+    --buttonBg: #101018;
+    --buttonAcc1: #000;
+    --buttonAcc2: #29295d;
+    --grad: rgba(150, 150, 175, 1) 0%, rgba(250, 250, 275, 1) 50%, rgba(150, 150, 175, 1) 100%;
+}
