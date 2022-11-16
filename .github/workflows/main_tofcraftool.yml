@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ToFCraftool'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_134A7AA5B82C47CEBD5D50850155AA38 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_07DC6039016041A9B3456D27260C2253 }}
           package: .
